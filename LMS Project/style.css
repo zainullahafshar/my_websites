@@ -1,0 +1,365 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#020617);
+    color:#fff;
+    background-image: url(assets/images/background_img.jpg);
+    height: 85vh;
+    background-size: cover;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    padding:20px 0;
+    background:rgba(15,23,42,0.7);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.nav ul{
+    list-style:none;
+    display:flex;
+}
+
+.nav ul li{
+    margin-left:25px;
+}
+
+.nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    transition:.3s;
+}
+
+.nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.logo{
+    color:#38bdf8;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    background:url("assets/images/hero.jpg") center/cover no-repeat;
+    position:relative;
+}
+
+.hero-overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero h2{
+    margin:10px 0;
+    color:#38bdf8;
+}
+
+.hero p{
+    max-width:600px;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#38bdf8;
+    padding:10px 25px;
+    border:none;
+    border-radius:5px;
+    text-decoration:none;
+    color:#000;
+    cursor:pointer;
+}
+
+.btn-outline{
+    border:1px solid #38bdf8;
+    padding:10px 25px;
+    text-decoration:none;
+    color:#38bdf8;
+    margin-left:10px;
+}
+
+.section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:32px;
+    color:#38bdf8;
+}
+
+.dark{
+    background:#0f172a;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(56,189,248,0.4);
+}
+
+.card img{
+    width:60px;
+    margin-bottom:15px;
+}
+
+.about{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:350px;
+    border-radius:15px;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:500px;
+    margin:auto;
+}
+
+input,textarea{
+    padding:12px;
+    border:none;
+    border-radius:5px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+/* ================= LINUX COURSE SECTION ================= */
+
+.course-btn{
+    margin-top:15px;
+    padding:8px 18px;
+    background:#38bdf8;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.course-btn:hover{
+    background: yellow;
+}
+
+.linux-course-section{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#0f172a;
+    overflow-y:auto;
+    padding:60px 20px;
+    display:none;
+    z-index:9999;
+    
+}
+
+.course-container{
+    max-width:1000px;
+    margin:auto;
+    background:#111827;
+    padding:40px;
+    border-radius:15px;
+}
+
+.course-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.close-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.course-content h3{
+    margin-top:25px;
+    color:#38bdf8;
+}
+
+.course-content pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.course-content ul{
+    padding-left:20px;
+}
+
+.course-end{
+    margin-top:30px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+
+.hero-profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    overflow:hidden;
+    border:4px solid #38bdf8;
+    margin-bottom:25px;
+}
+
+.hero-profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* footer Section  */
+.pro-footer{
+background:#020617;
+padding:60px 20px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+text-align:left;
+}
+
+.pro-footer h3,h4{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.copy{
+text-align:center;
+margin-top:40px;
+opacity:0.7;
+}
+
+/* Secrion overlay  */
+
+/* ===== ADVANCED OVERLAY ANIMATION ===== */
+
+.section-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(2,6,23,0.92);
+  backdrop-filter:blur(14px);
+  display:none;
+  z-index:9999;
+  animation:overlayFade .45s ease;
+}
+
+.overlay-content{
+  max-width:1000px;
+  margin:70px auto;
+  background:#111827;
+  padding:40px;
+  border-radius:18px;
+  transform:translateY(60px) scale(.92);
+  opacity:0;
+  animation:contentIn .55s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+@keyframes overlayFade{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+@keyframes contentIn{
+  to{
+    transform:translateY(0) scale(1);
+    opacity:1;
+  }
+}
+ /* Scroll bar */
+ .linux-course-section{
+  position:fixed;
+  inset:0;
+  background:#0f172a;
+  overflow-y:auto;
+  display:none;
+  z-index:10000;
+}
+
+/* Title Course */
+
+.project-actions{
+  margin-top:15px;
+}
+
+.project-actions .course-btn{
+  display:inline-block;
+}
+
+
+/* ===== FORCE PROJECT IMAGE FULL WIDTH ===== */
+.card img.project-img{
+  width:100% !important;
+  max-width:100% !important;
+  height:180px;
+  object-fit:cover;
+  border-radius:15px 15px 0 0;
+  display:block;
+  margin-bottom:15px;
+}

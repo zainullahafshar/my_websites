@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zainullah | IT Infrastructure Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- ===== SECTION OVERLAY ===== -->
+<div id="sectionOverlay" class="section-overlay">
+  <div class="overlay-content">
+    <button class="close-btn" onclick="closeSection()">Close</button>
+    <div id="overlayBody"></div>
+  </div>
+</div>
+
+<header id="navbar">
+    <div class="container nav">
+        <h2 class="logo">Zainullah Afshar</h2>
+        <ul>
+           <li><a href="javascript:void(0)" onclick="openSection('#about')">About</a></li>
+<li><a href="javascript:void(0)" onclick="openSection('#skills')">Skills</a></li>
+<li><a href="javascript:void(0)" onclick="openSection('#projects')">Projects</a></li>
+<li><a href="javascript:void(0)" onclick="openSection('#contact')">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="hero">
+    
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <div class="hero-profile">
+    <img src="assets/images/IT_Zainullah.png" alt="Zainullah Profile">
+     </div>
+        <div class="hero-text">
+            <h1>Hi, I'm Zainullah</h1>
+            <h2><span class="typing"></span></h2>
+            <p>
+                Specialized in Linux Administration, Cisco Networking,
+                Windows Server Infrastructure, Cyber Security & Enterprise Solutions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="assets/Zainullah.PDF" download class="btn-outline">
+                Download CV
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section reveal">
+    <div class="container about">
+        <div class="about-img">
+            <img src="assets/images/Linux.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I am an IT Infrastructure Engineer with strong experience in
+                enterprise network architecture, secure server environments,
+                and scalable IT system deployment.
+            </p>
+            <p>
+                My mission is to deliver secure, optimized and business-ready
+                IT solutions for modern organizations.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section dark reveal">
+    <div class="container">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="assets/images/example.jpg" alt="">
+                <h3>Linux Administration</h3>
+                <p>SSH, Apache, Nginx, Bash, System Hardening</p> <br> <br>
+                
+                <button class="course-btn" onclick="openLinuxCourse()">
+                 Linux Full Course
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/cisco.png" alt="">
+                <h3>Cisco Networking</h3>
+                <p>Routing, Switching, VLAN, OSPF, CCNA, CCNP, CCIE</p> <br>
+                <button class="course-btn" onclick="openCCNACourse()">
+                    CCNA Full Course
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/windows.png" alt="">
+                <h3>Windows Server</h3>
+                <p>Active Directory, DNS, DHCP, Group Policy</p> <br> <br>
+                <button class="course-btn" onclick="openWindowsCourse()">
+                 Windows Server Full Course
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/security1.png" alt="">
+                <h3>Cyber Security</h3>
+                <p>Firewall, VPN, Access Control, Monitoring</p> <br> <br>
+                <button class="course-btn" onclick="openCyberCourse()">
+                Cybersecurity Full Course
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section reveal">
+    <div class="container">
+        <h2 class="section-title">Major Projects</h2>
+        <div class="grid">    
+            <div class="card">
+
+            <img src="assets/images/project1.png" class="project-img" alt="Enterprise Network">
+
+            <h3>Enterprise Network Deployment</h3>
+            <p>Full VLAN segmentation and firewall security setup.</p>
+
+            <div class="project-actions">
+                <a href="assets/projects/project1.pkt" download class="course-btn">
+                Download Packet Tracer File
+                </a>
+            </div>
+
+            </div>
+
+
+           <div class="card">
+
+                <img src="assets/images/project2.png" class="project-img" alt="Linux Server">
+
+                <h3>Linux Production Server</h3>
+                <p>Configured secure web server with optimization.</p>
+
+                <div class="project-actions">
+                    <a href="assets/projects/project2.pkt" download class="course-btn">
+                    Download Packet Tracer File
+                    </a>
+                </div>
+
+            </div>
+
+        <div class="card">
+
+                <img src="assets/images/project3.png" class="project-img" alt="Active Directory">
+
+                <h3>Active Directory Infrastructure</h3>
+                <p>Domain controller setup with centralized management.</p>
+
+                <div class="project-actions">
+                    <a href="assets/projects/project3.pkt" download class="course-btn">
+                    Download Packet Tracer File
+                    </a>
+                </div>
+
+                </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section dark reveal">
+    <div class="container contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </div>
+    
+</section>
+
+<!-- ================= LINUX COURSE SECTION ================= -->
+
+<section id="linux-course" class="linux-course-section">
+
+    <div class="course-container">
+
+        <div class="course-header">
+            <h2>Linux Operating System - Complete Professional Course</h2>
+            <button class="close-btn" onclick="closeLinuxCourse()">Close</button>
+        </div>
+
+        <div class="course-content">
+
+            <h3>1. What is Linux?</h3>
+            <p>
+                Linux is an open-source Unix-like operating system kernel created by Linus Torvalds in 1991.
+                GNU/Linux is the complete operating system built using the Linux kernel and GNU tools.
+            </p>
+
+            <h3>2. Key Features</h3>
+            <ul>
+                <li>Open Source and Free</li>
+                <li>Multi-user & Multi-tasking</li>
+                <li>Secure & Stable</li>
+                <li>Portable across hardware</li>
+            </ul>
+            <h3>3. Key Features</h3>
+            <ul>
+            <h3>3. Linux Architecture</h3>
+<pre>
+User Applications
+Shell & Utilities
+System Libraries
+Linux Kernel
+Hardware
+</pre>
+
+            <h3>4. File System Structure</h3>
+<pre>
+/        Root
+/home    User directories
+/etc     Config files
+/bin     Essential binaries
+/var     Logs
+/usr     Programs
+</pre>
+
+            <h3>5. Basic Commands</h3>
+<pre>
+pwd
+ls -la
+cd
+cp
+mv
+rm
+mkdir
+touch
+cat
+</pre>
+
+            <h3>6. User Management</h3>
+<pre>
+useradd username
+passwd username
+usermod -aG group user
+</pre>
+
+            <h3>7. Process Management</h3>
+<pre>
+ps aux
+top
+kill PID
+</pre>
+
+            <h3>8. Package Management (APT)</h3>
+<pre>
+apt update
+apt upgrade
+apt install package
+</pre>
+
+            <h3>9. Networking</h3>
+<pre>
+ip addr
+ping google.com
+ssh user@host
+</pre>
+
+            <h3>10. Shell Scripting</h3>
+<pre>
+#!/bin/bash
+echo "Hello World"
+</pre>
+
+            <h3>11. System Administration</h3>
+<pre>
+systemctl start service
+journalctl
+crontab -e
+</pre>
+
+            <h3>12. Advanced Topics</h3>
+<pre>
+iptables
+docker
+LVM
+KVM
+</pre>
+
+            <p class="course-end">
+                This is a complete beginner-to-advanced Linux foundation.
+                Practice daily to become Linux System Administrator.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="ccna-course" class="linux-course-section">
+
+  <div class="course-container">
+
+    <div class="course-header">
+      <h2>CCNA – Cisco Certified Network Associate</h2>
+      <button class="close-btn" onclick="closeLinuxCourse()">Close</button>
+    </div>
+
+    <div class="course-content">
+      <h3>Course Overview</h3>
+      <p>
+        This CCNA course teaches the fundamentals of computer networking,
+        routing, switching, and network troubleshooting.
+      </p>
+
+      <h3>What You Will Learn</h3>
+      <ul>
+        <li>Basics of Computer Networks</li>
+        <li>LAN, WAN, MAN concepts</li>
+        <li>IP Addressing & Subnetting</li>
+        <li>Routing & Switching</li>
+        <li>Introduction to Cisco Devices</li>
+      </ul>
+
+      <p class="course-end">
+        This is a starter layout. You can add full CCNA chapters here.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="windows-course" class="linux-course-section">
+
+  <div class="course-container">
+
+    <div class="course-header">
+      <h2>Windows Server – Full Professional Course</h2>
+      <button class="close-btn" onclick="closeLinuxCourse()">Close</button>
+    </div>
+
+    <div class="course-content">
+      <h3>Course Overview</h3>
+      <p>
+        Windows Server course focuses on managing enterprise networks,
+        users, security, and server infrastructure.
+      </p>
+
+      <h3>Main Topics</h3>
+      <ul>
+        <li>Windows Server Introduction</li>
+        <li>Active Directory (AD DS)</li>
+        <li>DNS & DHCP</li>
+        <li>Group Policy (GPO)</li>
+        <li>File & Storage Management</li>
+      </ul>
+
+      <p class="course-end">
+        You can extend this section with full Windows Server lessons.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="cyber-course" class="linux-course-section">
+
+  <div class="course-container">
+
+    <div class="course-header">
+      <h2>Cybersecurity – Complete Fundamentals</h2>
+      <button class="close-btn" onclick="closeLinuxCourse()">Close</button>
+    </div>
+
+    <div class="course-content">
+      <h3>Course Overview</h3>
+      <p>
+        This cybersecurity course introduces security principles,
+        threats, and protection techniques.
+      </p>
+
+      <h3>Core Topics</h3>
+      <ul>
+        <li>What is Cybersecurity?</li>
+        <li>CIA Triad</li>
+        <li>Threats & Vulnerabilities</li>
+        <li>Malware & Attacks</li>
+        <li>Firewalls & Network Security</li>
+      </ul>
+
+      <p class="course-end">
+        This is a base structure. Add advanced cybersecurity topics later.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+<!-- Footer Section -->
+<footer>
+    <footer class="pro-footer">
+<div class="footer-grid">
+  <div>
+   <h3>Zainullah Afshar</h3>
+   <p>IT Infrastructure Engineer</p>
+  </div>
+  <div>
+   <h4>Courses</h4>
+   <p>Linux</p>
+   <p>CCNA</p>
+   <p>Windows Server</p>
+   <p>Cybersecurity</p>
+  </div>
+  <div>
+   <h4>Contact</h4>
+   <p>Email: your@email.com</p>
+   <p>Location: Afghanistan</p>
+  </div>
+</div>
+<p class="copy">© 2026 Zainullah. All Rights Reserved.</p>
+</footer>
+</footer>
+</body>
+</html>
